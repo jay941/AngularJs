@@ -1,0 +1,6 @@
+goto the directry where file is presant
+step1:bower init
+step2:bower install angularjs
+step3:bower install angular-ui-router
+step4:bower install --save bootstrap
+step5:subl.

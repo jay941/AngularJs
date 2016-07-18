@@ -1,0 +1,24 @@
+{
+  "name": "pangularEx",
+  "homepage": "https://github.com/nextitsoftsys/AngularJs",
+  "authors": [
+    "habeebak501 <habeebak501@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+  ,
+  "dependencies": {
+    "angular": "^1.5.25",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.6"
+  }
+}
