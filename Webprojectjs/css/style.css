@@ -86,3 +86,14 @@ hr{
     display: block;
     margin-top: 10px;
 }
+
+
+.h{
+    background-color: #F9F2DA;
+
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
