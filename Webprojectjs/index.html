@@ -5,31 +5,27 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <!-- All CSS -->
-   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-
-   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-   <link rel="stylesheet" href="css/style.css">
+  <!-- All CSS -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Sudoco.com</title>
 </head>
 
 <body ng-app="sudoApp">
+<div>
+  <div ui-view="nav">
+    <div ng-include="'pages/navbar.html'"></div>
+  </div>
+  <div class="container-fluid">
+    <div ui-view name="main"></div>
+  <div>
+  <div ui-view="footer">
+        <div ng-include="'pages/footer.html'"></div>
+  </div>
 
-       <div>
-          <div ui-view="nav">
-				    <div ng-include="'pages/navbar.html'" ></div>
-		      </div>
-		  
-           <div class="container-fluid">
-				      <div ui-view name="main"></div>
-			     <div>
-
-           	 <div ui-view="footer">
-           		 <div ng-include="'pages/footer.html'"></div>
-           	</div>
-           
-       </div>
+    </div>
 </body>
 
 <!-- Application Dependencies -->
@@ -39,15 +35,10 @@
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/cr-bootstrap-navbar/src/cr-bootstrap-navbar.js"></script>
 
-
-
-
 <!-- Application Script -->
 <script src="app.js"></script>
 <script src="slide.js"></script>
 <script src="controller/loginCtrl.js"></script>
 <script src="controller/loginCtrl1.js"></script>
-
-
 
 </html>
